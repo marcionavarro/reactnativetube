@@ -22,7 +22,7 @@ function SearchBar({ placeholder, onPress }: Props) {
         value=""
         onChangeText={() => {}}
         placeholderTextColor="#A8B5DB"
-        className="flex-1 ml-2 text-white"
+        className="flex-1 ml-2 text-white rounded-full"
       />
     </View>
   );

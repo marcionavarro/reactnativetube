@@ -3,7 +3,7 @@ export const TMDB_CONFIG = {
   API_KEY: process.env.EXPO_PUBLIC_MOVIE_API_KEY,
   headers: {
     accept: "application/json",
-    Authorization: `Bearer ${process.env.EXPO_PUBLIC_MOVIE_API_TOKEN}`,
+    Authorization: `Bearer ${process.env.EXPO_PUBLIC_MOVIE_API_KEY}`,
   },
 };
 
@@ -17,6 +17,8 @@ export const fetchMovies = async ({ query }: { query: string }) => {
     headers: TMDB_CONFIG.headers,
   });
 
+  console.log(response)
+
   if (!response.ok) {
     throw new Error(`Falha ao buscar filmes: ${response.statusText}`);
   }
@@ -24,5 +26,3 @@ export const fetchMovies = async ({ query }: { query: string }) => {
   const data = await response.json();
   return data.results;
 };
-
-//
