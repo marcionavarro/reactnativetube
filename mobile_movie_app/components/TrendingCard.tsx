@@ -17,7 +17,7 @@ function TrendingCard({
           resizeMode="cover"
         />
 
-        <View className="absolute bottom-3 -left-3.5 px-2 py-1 rounded-full">
+        <View className="absolute bottom-5 -left-3.5 px-2 py-1 rounded-full">
           <MaskedView
             maskElement={
               <Text className="font-bold text-white text-6xl">{index + 1}</Text>
@@ -34,7 +34,7 @@ function TrendingCard({
         <Text
           className="text-sm font-bold mt-2 text-light-200"
           numberOfLines={2}
-        ></Text>
+        >{title}</Text>
       </TouchableOpacity>
     </Link>
   );
