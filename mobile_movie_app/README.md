@@ -63,16 +63,16 @@ Bem-vindo ao **Filmes Flix**, um aplicativo mobile desenvolvido em React Native 
     <td align="center">Detalhes do Filme</td>
   </tr>
   <tr>
-    <td><img src="assets/screenshots/image.png" alt="Home" width="200"/></td>
-    <td><img src="assets/screenshots/search.png" alt="Pesquisa" width="200"/></td>
-    <td><img src="assets/screenshots/details.png" alt="Detalhes" width="200"/></td>
+    <td><img src="assets/screenshots/image.png" alt="Home" /></td>
+    <td><img src="assets/screenshots/search.png" alt="Pesquisa" /></td>
+    <td><img src="assets/screenshots/details.png" alt="Detalhes" /></td>
   </tr>
 </table>
 
 
 ## 🙏 Créditos
 
-Feito com ❤️ por [Marcio Navarro](https://www.marcionavarro.com.br).  
-Este projeto foi inspirado e desenvolvido com base no tutorial do canal [JavaScript Mastery](https://www.youtube.com/watch?v=f8Z9JyB2EIE).
+Feito com ❤️ por <a href="https://www.marcionavarro.com.br" target="_blank" rel="noopener noreferrer">Marcio Navarro</a> .  
+Este projeto foi inspirado e desenvolvido com base no tutorial do canal <a href="https://www.youtube.com/watch?v=f8Z9JyB2EIE" target="_blank" rel="noopener noreferrer"> JavaScript Mastery</a> .
 
 ---
