@@ -17,8 +17,6 @@ export const fetchMovies = async ({ query }: { query: string }) => {
     headers: TMDB_CONFIG.headers,
   });
 
-  console.log(response);
-
   if (!response.ok) {
     throw new Error(`Falha ao buscar filmes: ${response.statusText}`);
   }

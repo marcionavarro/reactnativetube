@@ -1,50 +1,78 @@
-# Welcome to your Expo app 👋
+# 🎬 Filmes Flix
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Bem-vindo ao **Filmes Flix**, um aplicativo mobile desenvolvido em React Native com Expo, que permite pesquisar, visualizar detalhes e acompanhar tendências de filmes populares!
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Tecnologias Utilizadas
 
-   ```bash
+- **[Expo](https://expo.dev/)**: Plataforma para desenvolvimento rápido de apps React Native.
+- **[React Native](https://reactnative.dev/)**: Framework para apps nativos usando React.
+- **[TypeScript](https://www.typescriptlang.org/)**: Tipagem estática para maior segurança.
+- **[NativeWind](https://www.nativewind.dev/)**: Utilitários Tailwind CSS para React Native.
+- **[Appwrite](https://appwrite.io/)**: Backend para salvar e consultar tendências de busca.
+- **[The Movie Database API (TMDB)](https://www.themoviedb.org/documentation/api)**: Fonte dos dados dos filmes.
+
+---
+
+## 🛠️ Instalação
+
+1. **Clone o repositório**
+   ```sh
+   git clone https://github.com/marcionavarro/reactnativetube.git
+   cd mobile_movie_app
+   ```
+
+2. **Instale as dependências**
+   ```sh
    npm install
    ```
 
-2. Start the app
+3. **Configure as variáveis de ambiente**
+   - Crie um arquivo `.env.local` na raiz com as seguintes variáveis:
+     ```
+     EXPO_PUBLIC_MOVIE_API_KEY=SEU_TOKEN_TMDB
+     EXPO_PUBLIC_APPWRITE_PROJECT_ID=SEU_PROJECT_ID
+     EXPO_PUBLIC_APPWRITE_DATABASE_ID=SEU_DATABASE_ID
+     EXPO_PUBLIC_APPWRITE_COLLECTION_ID=SEU_COLLECTION_ID
+     ```
 
-   ```bash
+4. **Inicie o projeto**
+   ```sh
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📱 Funcionalidades
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Pesquisa de filmes por nome.
+- Visualização de detalhes completos dos filmes.
+- Listagem dos filmes mais populares e recentes.
+- Tendências baseadas nas buscas dos usuários.
+- Interface moderna e responsiva.
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🖼️ Screenshots
 
-```bash
-npm run reset-project
-```
+<table>
+  <tr>
+    <td align="center">Home</td>
+    <td align="center">Pesquisa</td>
+    <td align="center">Detalhes do Filme</td>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/image.png" alt="Home" width="200"/></td>
+    <td><img src="assets/screenshots/search.png" alt="Pesquisa" width="200"/></td>
+    <td><img src="assets/screenshots/details.png" alt="Detalhes" width="200"/></td>
+  </tr>
+</table>
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+## 🙏 Créditos
 
-To learn more about developing your project with Expo, look at the following resources:
+Feito com ❤️ por [Marcio Navarro](https://www.marcionavarro.com.br).  
+Este projeto foi inspirado e desenvolvido com base no tutorial do canal [JavaScript Mastery](https://www.youtube.com/watch?v=f8Z9JyB2EIE).
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
