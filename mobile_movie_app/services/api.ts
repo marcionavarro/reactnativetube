@@ -17,7 +17,7 @@ export const fetchMovies = async ({ query }: { query: string }) => {
     headers: TMDB_CONFIG.headers,
   });
 
-  console.log(response)
+  console.log(response);
 
   if (!response.ok) {
     throw new Error(`Falha ao buscar filmes: ${response.statusText}`);
@@ -25,4 +25,30 @@ export const fetchMovies = async ({ query }: { query: string }) => {
 
   const data = await response.json();
   return data.results;
+};
+
+export const fetchMovieDetails = async (
+  movieId: string
+): Promise<MovieDetails> => {
+  try {
+    const response = await fetch(
+      `${TMDB_CONFIG.BASE_URL}/movie/${movieId}?api_key=${TMDB_CONFIG.API_KEY}&language=pt-BR`,
+      {
+        method: "GET",
+        headers: TMDB_CONFIG.headers,
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error(
+        `Erro ao buscar detalhes do filme: ${response.statusText}`
+      );
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Erro ao buscar detalhes do filme:", error);
+    throw error;
+  }
 };
